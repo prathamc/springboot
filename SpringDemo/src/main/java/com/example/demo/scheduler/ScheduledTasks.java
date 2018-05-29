@@ -38,7 +38,7 @@ public class ScheduledTasks {
     @Autowired
     Job processJob;
 
-	@Scheduled(fixedDelay = 300000)
+/*	@Scheduled(fixedDelay = 300000)
 	public void scheduleTaskWithFixedRate() {
 		 logger.info("Spring batch Job execution started : ", dateTimeFormatter.format(LocalDateTime.now()) );
 		 JobParameters jobParameters = new JobParametersBuilder().addLong("time", System.currentTimeMillis())
@@ -61,7 +61,7 @@ public class ScheduledTasks {
 	public void scheduleTaskWithFixedDelay() {
 		logger.info("Fixed Delay Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));
 
-		/*String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+		String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 		StringBuilder salt = new StringBuilder();
 		Random rnd = new Random();
 		while (salt.length() < 18) { // length of the random string.
@@ -71,9 +71,9 @@ public class ScheduledTasks {
 		String saltStr = salt.toString();
 		
 		MongoEmployee insert = empRepo.insert(new MongoEmployee(saltStr.toString()));
-		logger.info("Employee Added : " + insert.toString());*/
+		logger.info("Employee Added : " + insert.toString());
 		
-	}
+	}*/
 
 	/*@Scheduled(fixedRate = 2000, initialDelay = 5000)
 	public void scheduleTaskWithInitialDelay() {

@@ -6,8 +6,8 @@ import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.example.demo.EmployeeService;
 import com.example.demo.model.Employee;
+import com.example.demo.service.EmployeeService;
 
 @Component
 public class EmployeeWriter implements ItemWriter<Employee> {

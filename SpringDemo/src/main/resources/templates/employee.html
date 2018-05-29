@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="/webjars/jquery/3.3.1-1/jquery.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="/webjars/bootstrap/3.3.7/css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div class="col-sm-6">
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead >
+						<th class="active">ID</th>
+						<th class="active">NAME</th>
+					</thead>
+					<tbody>
+						<tr th:each="emp  : ${h2employees}">
+							<td th:text="${emp.id}">001</td>
+							<td th:text="${emp.name}">Name</td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+		
+		<div class="col-sm-6">
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead >
+						<th class="active">ID</th>
+						<th class="active">NAME</th>
+					</thead>
+					<tbody>
+						<tr th:each="emp  : ${mongoEmployees}">
+							<td th:text="${emp.id}"></td>
+							<td th:text="${emp.name}"></td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

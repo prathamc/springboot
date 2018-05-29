@@ -8,8 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.demo.EmployeeService;
 import com.example.demo.model.Employee;
+import com.example.demo.service.EmployeeService;
 
 @Controller
 public class EmployeeController {
